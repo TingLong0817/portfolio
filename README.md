@@ -1,17 +1,36 @@
-# **Magic Portfolio by Once UI**
+# **MoveInsight - AI-Powered Motion Analysis Solutions**
 
-View the [demo here](https://demo.magic-portfolio.com).
+Official website for MoveInsight, a company focused on developing AI-powered portable motion analysis solutions for sports science and rehabilitation.
 
-![Magic Portfolio](https://demo.magic-portfolio.com/images/og/home.jpg)
+![MoveInsight](https://move-insight.com/images/og/home.jpg)
 
+# **About MoveInsight**
+
+MoveInsight is dedicated to revolutionizing motion analysis through AI technology. We develop portable, intelligent solutions that provide real-time insights for sports science and rehabilitation professionals. Our goal is to make advanced motion analysis accessible, accurate, and actionable for improving human performance and recovery.
+
+## **Our Mission**
+
+We are pioneering AI-powered portable motion analysis solutions for sports science and rehabilitation. Our technology enables real-time movement analysis to enhance performance and recovery.
+
+## **Core Team**
+
+- **Ting Long** - Lead AI Engineer
+- **Yiran Jiao** - Senior Software Engineer  
+- **Charlie Gu** - Hardware Engineer
+
+## **Contact**
+
+- **Email**: contact@move_insight.com
+- **Website**: https://move-insight.com
+- **LinkedIn**: https://www.linkedin.com/company/moveinsight
 
 # **Getting started**
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+This website is built with [Next.js](https://nextjs.org) and [Once UI](https://once-ui.com). It requires Node.js v18.17+.
 
 **1. Clone the repository**
 ```
-git clone https://github.com/once-ui-system/magic-portfolio.git
+git clone [your-repository-url]
 ```
 
 **2. Install dependencies**
@@ -26,27 +45,21 @@ npm run dev
 
 **4. Edit config**
 ```
-src/app/resources/config
+src/resources/once-ui.config.js
 ```
 
 **5. Edit content**
 ```
-src/app/resources/content
+src/resources/content.js
 ```
-
-**6. Create blog posts / projects**
-```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
-```
-
-# **Documentation**
-
-Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
 
 # **Features**
 
-## **Once UI**
-- All tokens, components & features of [Once UI](https://once-ui.com)
+## **Company Website**
+- Professional company presentation
+- Team member profiles
+- Solution showcase
+- Contact information
 
 ## **SEO**
 - Automatic open-graph and X image generation with next/og
@@ -54,41 +67,27 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 
 ## **Design**
 - Responsive layout optimized for all screen sizes
-- Timeless design without heavy animations and motion
-- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
+- Technology purple theme
+- Professional and modern design
 
 ## **Content**
-- Render sections conditionally based on the content file
-- Enable or disable pages for blog, work, gallery and about / CV
-- Generate and display social links automatically
-- Set up password protection for URLs
+- Company mission and vision
+- Team member introductions
+- Solution descriptions and features
+- Professional contact information
 
-## **Localization**
-- A localized version of Magic Portfolio is available with the next-intl library
-- To use localization, switch to the 'i18n' branch
+# **Technology Stack**
 
-# **Authors**
-
-Connect with us on Threads or LinkedIn.
-
-Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
-Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
-
-Localization added by [François Hernandez](https://github.com/francoishernandez)
-
-# **Get involved**
-
-- Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with us!
-- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
+- **Framework**: Next.js 15
+- **UI System**: Once UI
+- **Styling**: SCSS
+- **Language**: TypeScript
+- **Deployment**: Vercel (recommended)
 
 # **License**
 
-Distributed under the CC BY-NC 4.0 License.
-- Commercial usage is not allowed.
-- Attribution is required.
-- You can extend the license to commercial use by purchasing a [Once UI Pro](https://once-ui.com/pricing) license.
-
-See `LICENSE.txt` for more information.
+This is the official website of MoveInsight. All rights reserved.
 
 # **Deploy with Vercel**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=[your-repo-url]&project-name=moveinsight-website&repository-name=moveinsight-website&demo-title=MoveInsight&demo-description=AI-Powered%20Portable%20Motion%20Analysis%20Solutions&demo-url=https%3A%2F%2Fmove-insight.com&demo-image=%2F%2Fraw.githubusercontent.com%2F[your-username]%2Fmoveinsight-website%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)

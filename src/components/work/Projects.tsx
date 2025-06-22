@@ -14,7 +14,7 @@ export function Projects({ range }: ProjectsProps) {
   });
 
   const displayedProjects = range
-    ? sortedProjects.slice(range[0] - 1, range[1] ?? sortedProjects.length)
+    ? sortedProjects.slice(range[0] - 1, range[1])
     : sortedProjects;
 
   return (

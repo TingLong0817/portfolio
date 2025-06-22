@@ -1,0 +1,19 @@
+{
+  "name": "moveinsight-website",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_BASE_URL": "https://move-insight.com"
+  }
+} 

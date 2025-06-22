@@ -5,7 +5,7 @@ import '@/resources/custom.css'
 import classNames from "classnames";
 
 import { Background, Column, Flex, Meta, opacity, SpacingToken } from "@once-ui-system/core";
-import { Footer, Header, RouteGuard, Providers } from '@/components';
+import { Footer, Header, RouteGuard, Providers, ScrollToHash } from '@/components';
 import { baseURL, effects, fonts, style, dataStyle, home } from '@/resources';
 
 export async function generateMetadata() {
@@ -29,12 +29,7 @@ export default async function RootLayout({
       as="html"
       lang="en"
       fillWidth
-      className={classNames(
-        fonts.heading.variable,
-        fonts.body.variable,
-        fonts.label.variable,
-        fonts.code.variable,
-      )}
+      className={`${fonts.heading.variable} ${fonts.body.variable} ${fonts.label.variable} ${fonts.code.variable} ${fonts.display.variable}`}
     >
       <head>
         <script

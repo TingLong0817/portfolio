@@ -1,6 +1,7 @@
 {
-  "name": "@once-ui-system/magic-portfolio",
-  "version": "2.2.0",
+  "name": "moveinsight-website",
+  "version": "1.0.0",
+  "description": "MoveInsight - AI-Powered Portable Motion Analysis Solutions",
   "scripts": {
     "dev": "next dev",
     "export": "next export",

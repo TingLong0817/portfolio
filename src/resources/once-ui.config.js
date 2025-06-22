@@ -1,19 +1,19 @@
 import { home } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://demo.magic-portfolio.com";
+const baseURL = "https://move-insight.com";
 
 const routes = {
   "/": true,
-  "/about": true,
-  "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/about": false,
+  "/work": false,
+  "/blog": false,
+  "/gallery": false,
 };
 
 const display = {
   location: true,
-  time: true,
+  time: false,
   themeSwitcher: true
 };
 
@@ -26,6 +26,7 @@ const protectedRoutes = {
 // Import and set font for each variant
 import { Geist } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
+import { Exo_2 } from "next/font/google";
 
 const heading = Geist({
   variable: "--font-heading",
@@ -51,19 +52,26 @@ const code = Geist_Mono({
   display: "swap",
 });
 
+const displayFont = Exo_2({
+  variable: "--font-display",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 const fonts = {
   heading: heading,
   body: body,
   label: label,
   code: code,
+  display: displayFont,
 };
 
 // default customization applied to the HTML in the main layout.tsx
 const style = {
   theme: "system", // dark | light | system
   neutral: "gray", // sand | gray | slate | custom
-  brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
-  accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
+  brand: "violet", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom - Technology Purple
+  accent: "purple", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
   border: "playful", // rounded | playful | conservative
@@ -175,16 +183,15 @@ const mailchimp = {
 const schema = {
   logo: "",
   type: "Organization",
-  name: "Once UI",
+  name: "MoveInsight",
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "contact@move_insight.com",
 };
 
 // social links
 const sameAs = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  linkedin: "https://www.linkedin.com/company/moveinsight",
+  website: "https://move-insight.com",
 };
 
 export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };

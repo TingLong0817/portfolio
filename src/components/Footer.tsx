@@ -1,5 +1,5 @@
 import { Flex, IconButton, SmartLink, Text } from "@once-ui-system/core";
-import { person, social } from "@/resources";
+import { social, company } from "@/resources";
 import styles from "./Footer.module.scss";
 
 export const Footer = () => {
@@ -24,7 +24,7 @@ export const Footer = () => {
       >
         <Text variant="body-default-s" onBackground="neutral-strong">
           <Text onBackground="neutral-weak">© {currentYear} /</Text>
-          <Text paddingX="4">{person.name}</Text>
+          <Text paddingX="4">{company.name}</Text>
           <Text onBackground="neutral-weak">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
             / Build your portfolio with{" "}

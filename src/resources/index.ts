@@ -1,6 +1,6 @@
 // import a pre-defined template for config and content options
 export {
-  person,
+  company,
   social,
   newsletter,
   home,

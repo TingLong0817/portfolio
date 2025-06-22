@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { getPosts } from "@/utils/utils";
 import { Meta, Schema, AvatarGroup, Button, Column, Flex, Heading, Media, Text } from "@once-ui-system/core";
-import { baseURL, about, person, work } from "@/resources";
+import { baseURL, about, work, company } from "@/resources";
 import { formatDate } from "@/utils/formatDate";
 import { ScrollToHash, CustomMDX } from "@/components";
 import { Metadata } from "next";
@@ -49,7 +49,7 @@ export default async function Project({
 
   const avatars =
     post.metadata.team?.map((person) => ({
-      src: person.avatar,
+      src: company.avatar,
     })) || [];
 
   return (
@@ -64,9 +64,9 @@ export default async function Project({
         dateModified={post.metadata.publishedAt}
         image={post.metadata.image || `/api/og/generate?title=${encodeURIComponent(post.metadata.title)}`}
         author={{
-          name: person.name,
+          name: company.name,
           url: `${baseURL}${about.path}`,
-          image: `${baseURL}${person.avatar}`,
+          image: `${baseURL}${company.avatar}`,
         }}
       />
       <Column maxWidth="xs" gap="16">

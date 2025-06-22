@@ -1,51 +1,41 @@
 import { Logo } from "@once-ui-system/core";
 
-const person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  get name() {
-    return `${this.firstName} ${this.lastName}`;
-  },
-  role: "Design Engineer",
+const company = {
+  name: "MoveInsight",
+  role: "AI-Powered Portable Motion Analysis Solutions",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "contact@move_insight.com",
+  location: "Global", // Company location
+  languages: ["English"], // Company languages
+  website: "https://move-insight.com",
 };
 
 const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  display: false, // Disable newsletter for company website
+  title: <>Subscribe to {company.name}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Stay updated with the latest developments in AI-powered motion analysis technology.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
+  // Company social media links
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: "Email",
+    icon: "email",
+    link: `mailto:${company.email}`,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/company/moveinsight",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
+    name: "Website",
+    icon: "globe",
+    link: company.website,
   },
 ];
 
@@ -53,18 +43,17 @@ const home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: `${company.name} - ${company.role}`,
+  description: `AI-driven tools for real-time movement analysis in sports and rehabilitation`,
+  headline: <>MoveInsight</>,
   featured: {
-    display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    display: false,
+    title: <>Latest Innovation: <strong className="ml-4">AI Motion Analysis</strong></>,
+    href: "/work/ai-powered-motion-analysis-platform",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Portable Intelligent Motion Analysis Solutions
     </>
   ),
 };
@@ -72,8 +61,8 @@ const home = {
 const about = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: `About – ${company.name}`,
+  description: `Learn about ${company.name} and our mission in AI-powered motion analysis`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -82,111 +71,97 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false, // Disable calendar for company
     link: "https://cal.com",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Our Mission",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        {company.name} is dedicated to revolutionizing motion analysis through AI technology. 
+        We develop portable, intelligent solutions that provide real-time insights for sports science 
+        and rehabilitation professionals. Our goal is to make advanced motion analysis accessible, 
+        accurate, and actionable for improving human performance and recovery.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: false,
+    title: "Our Team",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Core Development Team",
+        timeframe: "2023 - Present",
+        role: "Technical Leadership",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led the development of AI-powered motion analysis algorithms, achieving 95% accuracy 
+            in real-time movement tracking and analysis.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Designed portable hardware solutions that integrate seamlessly with our AI software 
+            platform for comprehensive motion analysis.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "AI Motion Analysis Platform",
             width: 16,
             height: 9,
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Team Members",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Ting Long",
+        description: <>Lead AI Engineer - Specializing in computer vision and machine learning for motion analysis.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Yiran Jiao",
+        description: <>Senior Software Engineer - Expert in real-time data processing and system architecture.</>,
+      },
+      {
+        name: "Charlie Gu",
+        description: <>Hardware Engineer - Focused on portable sensor technology and system integration.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Core Technologies",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "AI Motion Analysis",
+        description: <>Advanced computer vision algorithms for real-time movement tracking and biomechanical analysis.</>,
         images: [
           {
             src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            alt: "AI Analysis Interface",
             width: 16,
             height: 9,
           },
           {
             src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            alt: "Motion Tracking",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Portable Hardware",
+        description: <>Lightweight, wireless sensor systems designed for real-world applications in sports and rehabilitation.</>,
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            alt: "Portable Sensors",
             width: 16,
             height: 9,
           },
@@ -199,70 +174,27 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Insights and Updates",
+  description: `Latest news and insights from ${company.name}`,
+  display: false, // Disable blog section
 };
 
 const work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  label: "Solutions",
+  title: `Solutions – ${company.name}`,
+  description: `AI-powered motion analysis solutions by ${company.name}`,
+  // Create new project pages by adding a new .mdx file to app/work/projects
   // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  title: `Gallery – ${company.name}`,
+  description: `Visual showcase of ${company.name} solutions`,
+  display: false, // Disable gallery section
+  images: [],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { company, social, newsletter, home, about, blog, work, gallery };
