@@ -25,8 +25,6 @@ export async function generateMetadata() {
   });
 }
 
-export const revalidate = 0;
-
 export default function HomePage() {
   const allProjects = getPosts(["src", "app", "work", "projects"]);
 
