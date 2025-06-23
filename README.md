@@ -14,14 +14,14 @@ We are pioneering AI-powered portable motion analysis solutions for sports scien
 
 ## **Core Team**
 
-- **Ting Long** - Lead AI Engineer
-- **Yiran Jiao** - Senior Software Engineer  
-- **Charlie Gu** - Hardware Engineer
+- **Ting Long** - Ph.D. in Biomedical Engineering, specializing in algorithm development
+- **Yiran Jiao** - Ph.D. in Sports Science, expert in sports analysis algorithms  
+- **Charlie Gu** - Full Stack Engineer, focused on system architecture
 
 ## **Contact**
 
-- **Email**: contact@move_insight.com
-- **Website**: https://move-insight.com
+- **Email**: contact@move-insight.com
+- **Website**: move-insight.com
 - **LinkedIn**: https://www.linkedin.com/company/moveinsight
 
 # **Getting started**

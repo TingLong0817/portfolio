@@ -1,7 +1,7 @@
 import { home } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://move-insight.com";
+const baseURL = "move-insight.com";
 
 const routes = {
   "/": true,
@@ -185,13 +185,13 @@ const schema = {
   type: "Organization",
   name: "MoveInsight",
   description: home.description,
-  email: "contact@move_insight.com",
+  email: "contact@move-insight.com",
 };
 
 // social links
 const sameAs = {
   linkedin: "https://www.linkedin.com/company/moveinsight",
-  website: "https://move-insight.com",
+  website: "move-insight.com",
 };
 
 export { display, mailchimp, routes, protectedRoutes, baseURL, fonts, style, schema, sameAs, effects, dataStyle };

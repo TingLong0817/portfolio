@@ -6,9 +6,13 @@
 - ✅ 将个人信息改为公司信息
 - ✅ 公司名称：MoveInsight
 - ✅ 公司描述：AI-Powered Portable Motion Analysis Solutions
-- ✅ 联系邮箱：contact@move_insight.com
-- ✅ 网站地址：https://move-insight.com
+- ✅ 联系邮箱：contact@move-insight.com
+- ✅ 网站地址：move-insight.com
 - ✅ 团队成员：Ting Long, Yiran Jiao, Charlie Gu
+- ✅ 团队详细信息更新：
+  - Ting Long: 生物医学工程博士，主要开发算法
+  - Yiran Jiao: 运动科学博士，开发和运动分析相关的算法
+  - Charlie Gu: 全栈工程师
 - ✅ 公司使命和愿景描述
 - ✅ 核心技术和解决方案介绍
 
@@ -91,5 +95,5 @@
 ## 联系信息
 
 如有问题或需要进一步定制，请联系：
-- 邮箱：contact@move_insight.com
-- 网站：https://move-insight.com 
+- 邮箱：contact@move-insight.com
+- 网站：move-insight.com 

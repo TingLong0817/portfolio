@@ -4,10 +4,10 @@ const company = {
   name: "MoveInsight",
   role: "AI-Powered Portable Motion Analysis Solutions",
   avatar: "/images/avatar.jpg",
-  email: "contact@move_insight.com",
+  email: "contact@move-insight.com",
   location: "Global", // Company location
   languages: ["English"], // Company languages
-  website: "https://move-insight.com",
+  website: "move-insight.com",
 };
 
 const newsletter = {
@@ -121,15 +121,15 @@ const about = {
     institutions: [
       {
         name: "Ting Long",
-        description: <>Lead AI Engineer - Specializing in computer vision and machine learning for motion analysis.</>,
+        description: <>Ph.D. in Biomedical Engineering - Specializing in algorithm development for motion analysis and computer vision.</>,
       },
       {
         name: "Yiran Jiao",
-        description: <>Senior Software Engineer - Expert in real-time data processing and system architecture.</>,
+        description: <>Ph.D. in Sports Science - Expert in developing algorithms for sports analysis and performance evaluation.</>,
       },
       {
         name: "Charlie Gu",
-        description: <>Hardware Engineer - Focused on portable sensor technology and system integration.</>,
+        description: <>Full Stack Engineer - Focused on system architecture and full-stack development for motion analysis platforms.</>,
       },
     ],
   },
