@@ -6,9 +6,8 @@ import { formatDate } from "@/utils/formatDate";
 import { ScrollToHash, CustomMDX } from "@/components";
 import { Metadata } from "next";
 
-const posts = getPosts(["src", "app", "work", "projects"]);
-
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const posts = getPosts(["src", "app", "work", "projects"]);
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -17,9 +16,12 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string | string[] };
+  params: Promise<{ slug: string | string[] }>;
 }): Promise<Metadata> {
-  const slugPath = Array.isArray(params.slug) ? params.slug.join('/') : params.slug || '';
+  const routeParams = await params;
+  const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
+
+  const posts = getPosts(["src", "app", "work", "projects"]);
   let post = posts.find((post) => post.slug === slugPath);
 
   if (!post) return {};
@@ -35,10 +37,13 @@ export async function generateMetadata({
 
 export default async function Project({
   params
-}: { params: { slug: string | string[] } }) {
-  const slugPath = Array.isArray(params.slug) ? params.slug.join('/') : params.slug || '';
+}: {
+  params: Promise<{ slug: string | string[] }>;
+}) {
+  const routeParams = await params;
+  const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
 
-  let post = posts.find((post) => post.slug === slugPath);
+  let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === slugPath);
 
   if (!post) {
     notFound();
