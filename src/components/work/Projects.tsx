@@ -1,15 +1,14 @@
-import { getPosts } from "@/utils/utils";
 import { Column } from "@once-ui-system/core";
 import { ProjectCard } from "@/components";
+import type { Team } from "@/utils/utils";
 
 interface ProjectsProps {
+  projects: any[]; // A more specific type can be used here
   range?: [number, number?];
 }
 
-export function Projects({ range }: ProjectsProps) {
-  let allProjects = getPosts(["src", "app", "work", "projects"]);
-
-  const sortedProjects = allProjects.sort((a, b) => {
+export function Projects({ projects, range }: ProjectsProps) {
+  const sortedProjects = projects.sort((a, b) => {
     return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
   });
 
@@ -28,7 +27,7 @@ export function Projects({ range }: ProjectsProps) {
           title={post.metadata.title}
           description={post.metadata.summary}
           content={post.content}
-          avatars={post.metadata.team?.map((member) => ({ src: member.avatar })) || []}
+          avatars={post.metadata.team?.map((member: Team) => ({ src: member.avatar })) || []}
           link={post.metadata.link || ""}
         />
       ))}

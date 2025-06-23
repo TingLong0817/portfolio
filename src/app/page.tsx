@@ -13,6 +13,7 @@ import {
 import { home, about, newsletter, baseURL, company } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
+import { getPosts } from "@/utils/utils";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -27,6 +28,8 @@ export async function generateMetadata() {
 export const revalidate = 0;
 
 export default function HomePage() {
+  const allProjects = getPosts(["src", "app", "work", "projects"]);
+
   return (
     <Column as="main" id="main" fillWidth>
       <Schema
@@ -107,7 +110,7 @@ export default function HomePage() {
         )}
       </Column>
 
-      <Projects />
+      <Projects projects={allProjects} />
 
       {/* Team Info moved to the bottom */}
       <Column as="section" fillWidth gap="xl" marginBottom="40" paddingX="l">
