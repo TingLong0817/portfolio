@@ -14,6 +14,7 @@ import { home, about, newsletter, baseURL, company } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { getPosts } from "@/utils/utils";
+import styles from "./page.module.scss";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -52,12 +53,13 @@ export default function HomePage() {
         direction="column"
         paddingX="l"
       >
-        <Column maxWidth="m" gap="m">
+        <Column maxWidth="m" gap="m" className={styles.titleContainer}>
           <RevealFx>
             <Heading
               as="h1"
               variant="display-strong-xl"
               align="start"
+              className={styles.mainTitle}
               style={{
                 color: '#6B21A8',
                 fontFamily: 'var(--font-display)',
@@ -74,6 +76,7 @@ export default function HomePage() {
               variant="display-default-m"
               align="start"
               onBackground="neutral-weak"
+              className={styles.subTitle}
             >
               {home.subline}
             </Text>

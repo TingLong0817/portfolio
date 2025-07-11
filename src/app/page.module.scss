@@ -1,0 +1,22 @@
+@use "../components/breakpoints.scss" as breakpoints;
+
+.titleContainer {
+  @media (max-width: breakpoints.$s) {
+    gap: var(--space-xl) !important;
+  }
+}
+
+.mainTitle {
+  margin-bottom: 2.5rem;
+  @media (max-width: breakpoints.$s) {
+    font-size: 4rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+}
+
+.subTitle {
+  @media (max-width: breakpoints.$s) {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+  }
+} 

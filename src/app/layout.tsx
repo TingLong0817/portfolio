@@ -32,6 +32,7 @@ export default async function RootLayout({
       className={`${fonts.heading.variable} ${fonts.body.variable} ${fonts.label.variable} ${fonts.code.variable} ${fonts.display.variable}`}
     >
       <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{
